@@ -1,0 +1,54 @@
+INICIO
+    cursos = 0
+    historial_cambios = 0
+    cola_revisiones = 0
+
+    MIENTRAS VERDADERO HACER
+        IMPRIMIR "GESTOR DE NOTAS ACADÉMICAS"
+        IMPRIMIR "1. Registrar nuevo curso"
+        IMPRIMIR "2. Mostrar todos los cursos y notas"
+        IMPRIMIR "3. Calcular promedio general"
+        IMPRIMIR "4. Contar cursos aprobados y reprobados"
+        IMPRIMIR "5. Buscar curso por nombre (búsqueda lineal)"
+        IMPRIMIR "6. Actualizar nota de un curso"
+        IMPRIMIR "7. Eliminar un curso"
+        IMPRIMIR "8. Ordenar cursos por nota"
+        IMPRIMIR "9. Ordenar cursos por nombre"
+        IMPRIMIR "10. Buscar curso por nombre"
+        IMPRIMIR "11. Simular cola de solicitudes de revisión"
+        IMPRIMIR "12. Mostrar historial de cambios"
+        IMPRIMIR "13. Salir"
+        LEER opcion
+
+        SI opcion = 1 ENTONCES
+            <Registrar nuevo curso>
+        SINO SI opcion = 2 ENTONCES
+            <Mostrar todos los cursos y notas>
+        SINO SI opcion = 3 ENTONCES
+            <Calcular promedio general>
+        SINO SI opcion = 4 ENTONCES
+            <Contar cursos aprobados y reprobados>
+        SINO SI opcion = 5 ENTONCES
+            <Buscar curso por nombre (búsqueda lineal)>
+        SINO SI opcion = 6 ENTONCES
+            <Actualizar nota de un curso>
+        SINO SI opcion = 7 ENTONCES
+            <Eliminar un curso>
+        SINO SI opcion = 8 ENTONCES
+            <Ordenar cursos por nota (burbuja)>
+        SINO SI opcion = 9 ENTONCES
+            <Ordenar cursos por nombre (inserción)>
+        SINO SI opcion = 10 ENTONCES
+            <Buscar curso por nombre (búsqueda binaria)>
+        SINO SI opcion = 11 ENTONCES
+            <Simular cola de solicitudes de revisión>
+        SINO SI opcion = 12 ENTONCES
+            <Mostrar historial de cambios (pila)>
+        SINO SI opcion = 13 ENTONCES
+            IMPRIMIR "Gracias por usar el Gestor de Notas Académicas. ¡Hasta pronto!"
+            SALIR DEL PROGRAMA
+        SINO
+            IMPRIMIR "Opción inválida. Intente de nuevo."
+        FIN_SI
+    FIN_MIENTRAS
+FIN
