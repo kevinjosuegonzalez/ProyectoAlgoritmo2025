@@ -1,0 +1,40 @@
+INICIO
+    #Lista para almacenar las notas ingresadas por el usuario
+    notas = []
+
+    #Bucle para registrar varias notas
+    REPETIR
+        IMPRIMIR "Ingrese una nota (0 a 100) o escriba "F" para finalizar:"
+        LEER entrada
+
+        #Validar si el usuario quiere salir
+        SI entrada = "F" ENTONCES
+            IMPRIMIR "Finalizando el registro de notas..."
+            Salir del bucle
+        SINO
+            #Intentar convertir la entrada a número
+            nota = CONVERTIR_A_NUMERO(entrada)
+
+            #Validación: la nota debe estar entre 0 y 100
+            SI nota >= 0 Y nota <= 100 ENTONCES
+                AGREGAR nota A notas
+                IMPRIMIR "Nota registrada con éxito."
+            SINO
+                IMPRIMIR "Error: la nota debe estar entre 0 y 100, o escriba 'F' para terminar."
+            FIN_SI
+        FIN_SI
+    HASTA QUE entrada = "F"
+
+    #Calcular el promedio de las notas registradas
+    SI long(notas) > 0 ENTONCES
+        suma = 0
+        PARA i = 1 HASTA long(notas)
+            suma = suma + notas[i]
+        FIN_PARA
+        promedio = suma / long(notas)
+
+        IMPRIMIR "El promedio de las notas registradas es: ", promedio
+    SINO
+        IMPRIMIR "No se registraron notas. No es posible calcular el promedio."
+    FIN_SI
+FIN
