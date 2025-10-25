@@ -26,3 +26,13 @@ Su objetivo principal es centralizar la gestión de notas en un solo lugar, faci
 - El almacenamiento de datos será en memoria usando **listas**.
 - Debe incluir **búsquedas lineales y binarias**, así como **algoritmos de ordenamiento**.
 - El código debe estar organizado por **funciones** y comentado de forma clara.
+
+## Reflexión personal
+¿Qué aprendí con este proyecto?
+Aprendi a realizar un programa de gestion de cursos en pyton usando lista, colas.
+
+¿Qué fue lo más desafiante de resolver?
+Es expresarlo en lenguaje de programacion y la logica
+
+¿Qué mejoraría si tuviera más tiempo?
+Entorno grafico con botones.
